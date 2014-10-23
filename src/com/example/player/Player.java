@@ -4,7 +4,8 @@ import com.example.util.ObjectifyEntity;
 import com.googlecode.objectify.annotation.Entity;
 
 /**
- * 
+ * This class is used to represent a player. 
+ * A player consist of a name, a rank, and a value. 
  * @author Thomas
  * @version 2
  * 
