@@ -6,7 +6,7 @@ import com.googlecode.objectify.annotation.Entity;
 /**
  * 
  * @author Thomas
- * @version 1
+ * @version 2
  * 
  */
 @Entity
@@ -15,24 +15,21 @@ public class Player extends ObjectifyEntity {
 	protected String name;
 	protected Integer rank;
 	protected Float value;
-	protected String type;
 	
-	public Player(String name, Integer rank, Float value, String type) {
+	public Player(String name, Integer rank, Float value) {
 		this.name = name;
 		this.rank = rank;
 		this.value = value;
-		this.type = type;
 	}
 
 	public Player(){
 		name = "";
 		rank = -1;
 		value = new Float(-1);
-		type = "";
 	}
 	
 	public String toString(){
-		return name+", "+rank+", "+value+", "+type;
+		return name+", "+rank+", "+value;
 	}
 
 	public String getName() {
@@ -57,14 +54,6 @@ public class Player extends ObjectifyEntity {
 
 	public void setValue(Float value) {
 		this.value = value;
-	}
-
-	public String getType() {
-		return type;
-	}
-
-	public void setType(String type) {
-		this.type = type;
 	}
 	
 }
