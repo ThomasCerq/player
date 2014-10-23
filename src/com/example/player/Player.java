@@ -3,6 +3,12 @@ package com.example.player;
 import com.example.util.ObjectifyEntity;
 import com.googlecode.objectify.annotation.Entity;
 
+/**
+ * 
+ * @author Thomas
+ * @version 1
+ * 
+ */
 @Entity
 public class Player extends ObjectifyEntity {
 	
