@@ -61,4 +61,12 @@ public class Player extends ObjectifyEntity {
 		this.score = value;
 	}
 	
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+	
 }
