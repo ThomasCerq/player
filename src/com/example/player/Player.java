@@ -8,29 +8,28 @@ import com.googlecode.objectify.annotation.Entity;
  * A player consist of a name, a rank, and a value. 
  * @author Thomas
  * @version 2
- * 
  */
 @Entity
 public class Player extends ObjectifyEntity {
 	
 	protected String name;
 	protected Integer rank;
-	protected Float value;
+	protected Float score;
 	
 	public Player(String name, Integer rank, Float value) {
 		this.name = name;
 		this.rank = rank;
-		this.value = value;
+		this.score = value;
 	}
 
 	public Player(){
 		name = "";
 		rank = -1;
-		value = new Float(-1);
+		score = new Float(-1);
 	}
 	
 	public String toString(){
-		return name+", "+rank+", "+value;
+		return name+", "+rank+", "+score;
 	}
 
 	public String getName() {
@@ -50,11 +49,11 @@ public class Player extends ObjectifyEntity {
 	}
 
 	public Float getValue() {
-		return value;
+		return score;
 	}
 
 	public void setValue(Float value) {
-		this.value = value;
+		this.score = value;
 	}
 	
 }
