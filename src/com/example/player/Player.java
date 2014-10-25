@@ -17,17 +17,20 @@ public class Player extends ObjectifyEntity {
 	protected Integer rank;
 	@AlsoLoad("value")
 	protected Integer score;
+	protected String type;
 	
-	public Player(String name, Integer rank, Integer score) {
+	public Player(String name, Integer rank, Integer score, String type) {
 		this.name = name;
 		this.rank = rank;
 		this.score = score;
+		this.type = type;
 	}
 
 	public Player(){
 		name = "";
 		rank = -1;
 		score = -1;
+		type = "";
 	}
 	
 	public String toString(){
