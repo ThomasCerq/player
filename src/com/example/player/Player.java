@@ -1,6 +1,7 @@
 package com.example.player;
 
 import com.example.util.ObjectifyEntity;
+import com.googlecode.objectify.annotation.AlsoLoad;
 import com.googlecode.objectify.annotation.Entity;
 
 /**
@@ -14,6 +15,7 @@ public class Player extends ObjectifyEntity {
 	
 	protected String name;
 	protected Integer rank;
+	@AlsoLoad("value")
 	protected Float score;
 	
 	public Player(String name, Integer rank, Float score) {
