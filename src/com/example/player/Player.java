@@ -16,10 +16,10 @@ public class Player extends ObjectifyEntity {
 	protected Integer rank;
 	protected Float score;
 	
-	public Player(String name, Integer rank, Float value) {
+	public Player(String name, Integer rank, Float score) {
 		this.name = name;
 		this.rank = rank;
-		this.score = value;
+		this.score = score;
 	}
 
 	public Player(){
@@ -48,11 +48,11 @@ public class Player extends ObjectifyEntity {
 		this.rank = rank;
 	}
 
-	public Float getValue() {
+	public Float getScore() {
 		return score;
 	}
 
-	public void setValue(Float value) {
+	public void setScore(Float value) {
 		this.score = value;
 	}
 	
